@@ -27,17 +27,23 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px;
+      padding: 20px 10px;
       max-width: 75rem;
       margin: auto;
   
       .header-button {
         font-weight: 700;
+        width: 150px;
         border: none;
         border-radius: 25px;
-        padding: 10px;
+        padding: 15px 20px;
         background-color: $black;
         color: white;
+        cursor: pointer;
+      }
+
+      .header-button:hover {
+        background-color: $black-hover;
       }
     }
   }
@@ -45,7 +51,7 @@ body {
   main {
     display: flex;
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 30px 0px;
     max-width: 75rem;
     margin: auto;
 
@@ -70,14 +76,20 @@ body {
           color: $gray;
         }
   
-        button {
+        .title-button {
           font-weight: 700;
+          width: 150px;
           border: none;
           border-radius: 25px;
           place-self: start;
-          padding: 10px;
+          padding: 15px 20px;
           background: linear-gradient($gradient-orange, $gradient-pink);
           color: white;
+          cursor: pointer;
+        }
+
+        .title-button:hover {
+          background: linear-gradient($gradient-orange-hover, $gradient-pink-hover);
         }
       }
       
@@ -87,7 +99,7 @@ body {
         min-height: 375px;
       }
 
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 701px) {
         flex-direction: row;
 
         .main-title {
@@ -96,6 +108,12 @@ body {
 
         .main-image {
           transform: translate(120px);
+        }
+      }
+
+      @media screen and (min-width: 1040px) {
+        img {
+          transform: translate(250px, -160px);
         }
       }
     }
@@ -181,18 +199,24 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px;
+      padding: 20px 10px;
       max-width: 75rem;
       margin: auto;
     }
   
     .footer-button {
       font-weight: 700;
+      width: 150px;
       border: none;
       border-radius: 25px;
-      padding: 10px;
+      padding: 15px 20px;
       background: linear-gradient($gradient-purple, $gradient-pink);
       color: white;
+      cursor: pointer;
+    }
+
+    .footer-button:hover {
+      background: linear-gradient($gradient-purple-hover, $gradient-pink-hover);
     }
   }
 }

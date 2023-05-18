@@ -25,22 +25,27 @@ body header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px 10px;
   max-width: 75rem;
   margin: auto;
 }
 body header .header-container .header-button {
   font-weight: 700;
+  width: 150px;
   border: none;
   border-radius: 25px;
-  padding: 10px;
+  padding: 15px 20px;
   background-color: #13183F;
   color: white;
+  cursor: pointer;
+}
+body header .header-container .header-button:hover {
+  background-color: rgba(19, 24, 63, 0.5019607843);
 }
 body main {
   display: flex;
   flex-direction: column;
-  padding: 20px 0px;
+  padding: 30px 0px;
   max-width: 75rem;
   margin: auto;
 }
@@ -63,21 +68,26 @@ body main .main-top .main-title h1 {
 body main .main-top .main-title p {
   color: #83869A;
 }
-body main .main-top .main-title button {
+body main .main-top .main-title .title-button {
   font-weight: 700;
+  width: 150px;
   border: none;
   border-radius: 25px;
   place-self: start;
-  padding: 10px;
+  padding: 15px 20px;
   background: linear-gradient(#FF6F48, #F02AA6);
   color: white;
+  cursor: pointer;
+}
+body main .main-top .main-title .title-button:hover {
+  background: linear-gradient(rgba(255, 112, 72, 0.5019607843), rgba(240, 42, 166, 0.5019607843));
 }
 body main .main-top .main-image {
   padding: 0px;
   min-width: 375px;
   min-height: 375px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 701px) {
   body main .main-top {
     flex-direction: row;
   }
@@ -86,6 +96,11 @@ body main .main-top .main-image {
   }
   body main .main-top .main-image {
     transform: translate(120px);
+  }
+}
+@media screen and (min-width: 1040px) {
+  body main .main-top img {
+    transform: translate(250px, -160px);
   }
 }
 body main .main-bottom {
@@ -161,17 +176,22 @@ body footer .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px 10px;
   max-width: 75rem;
   margin: auto;
 }
 body footer .footer-button {
   font-weight: 700;
+  width: 150px;
   border: none;
   border-radius: 25px;
-  padding: 10px;
+  padding: 15px 20px;
   background: linear-gradient(#4851FF, #F02AA6);
   color: white;
+  cursor: pointer;
+}
+body footer .footer-button:hover {
+  background: linear-gradient(rgba(72, 81, 255, 0.5019607843), rgba(240, 42, 166, 0.5019607843));
 }
 
 /*# sourceMappingURL=style.css.map */
