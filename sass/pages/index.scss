@@ -1,0 +1,198 @@
+@charset 'UTF-8';
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: $default-font;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  max-width: 100vw;
+  background: linear-gradient($white, $white, $light-gray);
+
+  header {  
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      max-width: 75rem;
+      margin: auto;
+  
+      .header-button {
+        font-weight: 700;
+        border: none;
+        border-radius: 25px;
+        padding: 10px;
+        background-color: $black;
+        color: white;
+      }
+    }
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    max-width: 75rem;
+    margin: auto;
+
+    .main-top {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  
+      .main-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 10px 0px;
+        padding: 10px;
+  
+        h1 {
+          font-size: 38px;
+          font-weight: 900;
+        }
+  
+        p {
+          color: $gray;
+        }
+  
+        button {
+          font-weight: 700;
+          border: none;
+          border-radius: 25px;
+          place-self: start;
+          padding: 10px;
+          background: linear-gradient($gradient-orange, $gradient-pink);
+          color: white;
+        }
+      }
+      
+      .main-image {
+        padding: 0px;
+        min-width: 375px;
+        min-height: 375px;
+      }
+
+      @media screen and (min-width: 700px) {
+        flex-direction: row;
+
+        .main-title {
+          justify-content: center;
+        }
+
+        .main-image {
+          transform: translate(120px);
+        }
+      }
+    }
+  
+    .main-bottom {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 110px 110px;
+      padding: 30px 0px;
+      place-items: center;
+      width: 100%;
+  
+      @media screen and (min-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      @media screen and (min-width: 1050px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+  
+      .main-card-container {
+        max-width: 20rem;
+  
+        .main-card {
+          display: flex;
+          align-items: center;
+          padding: 0px 20px;
+          background: linear-gradient($gradient-orange, $gradient-pink);
+          border-radius: 10px;
+          max-width: 100%;
+          min-height: 260px;
+          color: $white;
+          font-weight: 700;
+          font-size: 26px;
+        }
+      }
+  
+      .card-container {
+        background-color: $white;
+        border-radius: 10px;
+        max-width: 20rem;
+        height: 260px;
+  
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          height: 260px;
+          gap: 0px 30px;
+          padding: 0px 20px;
+          transform: translate(0px, -20px);
+  
+          img {
+            height: 50px;
+            width: 50px;
+          }
+  
+          p {
+            color: $gray;
+            font-size: 16px;
+          }
+  
+          a {
+            text-decoration: none;
+            color: $pink-1;
+            font-size: 19px;
+          }
+  
+          a:hover {
+            color: $pink-1-hover;
+          }
+        }
+      }
+    }
+  }
+  
+  footer {
+    width: 100%;
+    background-color: $black;
+  
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      max-width: 75rem;
+      margin: auto;
+    }
+  
+    .footer-button {
+      font-weight: 700;
+      border: none;
+      border-radius: 25px;
+      padding: 10px;
+      background: linear-gradient($gradient-purple, $gradient-pink);
+      color: white;
+    }
+  }
+}
