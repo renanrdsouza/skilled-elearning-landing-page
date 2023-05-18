@@ -172,6 +172,7 @@ body main .main-bottom .card-container .card a {
   text-decoration: none;
   color: #F74780;
   font-size: 19px;
+  width: fit-content;
 }
 body main .main-bottom .card-container .card a:hover {
   color: #ee96b2;
