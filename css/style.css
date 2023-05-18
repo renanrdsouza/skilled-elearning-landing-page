@@ -31,6 +31,7 @@ body header .header-container {
 }
 body header .header-container .header-button {
   font-weight: 700;
+  font-size: 18px;
   width: 150px;
   border: none;
   border-radius: 25px;
@@ -58,11 +59,12 @@ body main .main-top .main-title {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 10px 0px;
+  min-width: 375px;
+  gap: 30px 0px;
   padding: 10px;
 }
 body main .main-top .main-title h1 {
-  font-size: 38px;
+  font-size: 44px;
   font-weight: 900;
 }
 body main .main-top .main-title p {
@@ -70,6 +72,7 @@ body main .main-top .main-title p {
 }
 body main .main-top .main-title .title-button {
   font-weight: 700;
+  font-size: 18px;
   width: 150px;
   border: none;
   border-radius: 25px;
@@ -93,14 +96,18 @@ body main .main-top .main-image {
   }
   body main .main-top .main-title {
     justify-content: center;
+    min-width: 350px;
+  }
+  body main .main-top .main-title h1 {
+    font-size: 38px;
   }
   body main .main-top .main-image {
-    transform: translate(120px);
+    transform: translate(160px, -50px) scale(1.2);
   }
 }
 @media screen and (min-width: 1040px) {
-  body main .main-top img {
-    transform: translate(250px, -160px);
+  body main .main-top .main-image {
+    transform: translate(340px, -170px) scale(1);
   }
 }
 body main .main-bottom {
@@ -182,6 +189,7 @@ body footer .footer-container {
 }
 body footer .footer-button {
   font-weight: 700;
+  font-size: 18px;
   width: 150px;
   border: none;
   border-radius: 25px;
