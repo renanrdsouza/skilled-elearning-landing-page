@@ -23,6 +23,8 @@ body {
   background: linear-gradient($white, $white, $light-gray);
 
   header {  
+    width: 100vw;
+
     .header-container {
       display: flex;
       justify-content: space-between;
@@ -202,7 +204,7 @@ body {
   }
   
   footer {
-    width: 100%;
+    width: 100vw;
     background-color: $black;
   
     .footer-container {

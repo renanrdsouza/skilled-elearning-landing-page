@@ -21,6 +21,9 @@ body {
   max-width: 100vw;
   background: linear-gradient(#FFFFFF, #FFFFFF, #e3e5f4);
 }
+body header {
+  width: 100vw;
+}
 body header .header-container {
   display: flex;
   justify-content: space-between;
@@ -178,7 +181,7 @@ body main .main-bottom .card-container .card a:hover {
   color: #ee96b2;
 }
 body footer {
-  width: 100%;
+  width: 100vw;
   background-color: #13183F;
 }
 body footer .footer-container {
